@@ -1,0 +1,38 @@
+:root{
+    --font : Arial, Helvetica, sans-serif;
+    --bg-color : white;
+    --font-size: 125%;
+}
+
+body{
+    font-family: var(--font);
+    
+}
+.customize{
+    color: white;
+}
+
+.toggle{
+    font-size: 150%;
+    margin-left: 130px;
+    margin-top: 25px;
+    text-align: center;
+}
+
+#userText{
+    font-size: var(--font-size);
+    margin-top: 100px;
+    margin-left: 200px;
+    height: 500px;
+    width: 800px;
+    font-family: var(--font);
+    background-color: var(--bg-color);
+
+}
+
+#textSubmit{
+    position: absolute;
+    font-size: 200%;
+    margin-left: 70px;
+    margin-top: 300px;
+}

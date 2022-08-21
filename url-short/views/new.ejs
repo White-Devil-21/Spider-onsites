@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>URL_SHORT</title>
+    <style>
+        body{
+            text-align: center;
+        }
+        .head{
+            font-size: 200%;
+            margin-top: 90px;
+        }
+        .newUrl{
+            border-style: solid;
+            border-width: 2px;
+            border-radius: 15px;
+            padding: 25px;
+            width: 350px;
+            margin-top: 60px;
+            font-size: 200%;
+            margin-left: 550px;
+        }
+        #copy{
+            font-size: 120%;
+            border-radius: 20px;
+        }
+        .next
+        {
+            margin-top: 120px;
+
+            font-size: 150%;
+        }
+        .next a{
+            border-style: solid;
+            border-radius: 15px;
+            padding: 5px;
+            text-decoration: none;
+            color: black;
+            background-color: aliceblue;
+        }
+    </style>
+</head>
+<body>
+    <p class="head">YOUR NEW URL : </p>
+    <div class="newUrl">
+        <p id="copyLink"> https://newurl/<%= data %>  </p>
+        <button id="copy">COPY</button>
+    </div>
+
+
+    <div class="next">
+        <p>If you want to get another url shortened, click below</p>
+        <a href="/">HOME</a>
+    </div>
+    <script>
+        var copy = document.getElementById('copy')
+        copy.addEventListener('click', ()=>{
+            var p = document.getElementById('copyLink')
+            navigator.clipboard.writeText(p.innerHTML)
+        })
+    </script>
+</body>
+</html>
